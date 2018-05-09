@@ -1,0 +1,131 @@
+/* pages/movies/movie-detail/movie-detail.wxss */
+@import "../stars/stars-template.wxss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50rpx;
+}
+
+.head-img {
+    width: 100%;
+    filter: blur(10px);
+}
+
+.body {
+    margin-top: 60rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+}
+
+.head-img-hover {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70rpx;
+    left: 70rpx;
+}
+
+.main-title {
+    color: aliceblue;
+    font-size: 40rpx;
+}
+
+.sub-title {
+    margin-top: 40rpx;
+    font-size: 30rpx;
+    color: azure;
+}
+
+.like {
+    margin-top: 50rpx;
+}
+
+.highlight-font {
+    color: crimson;
+    margin-right: 16repx;
+}
+
+.plain-font {
+    margin-right: 22rpx;
+}
+
+.movie-img {
+    position: absolute;
+    height: 320rpx;
+    top: 230rpx;
+    left: 280rpx;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    line-height: 40rpx;
+}
+
+.original-title {
+    font-size: 20rpx;
+    margin-top: 22rpx;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.mark {
+    margin-right: 25rpx;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    margin-top: 45rpx;
+    background-color: grey;
+}
+
+.synopsis {
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.synopsis-font {
+    font-size: 40rpx;
+}
+
+.summary-content {
+    font-size: 26rpx;
+    margin-top: 20rpx;
+    line-height: 40rpx;
+    letter-spacing: 1px;
+}
+
+.cast {
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.cast-imgs {
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.cast-container {
+    margin-top: 30rpx;
+    margin-right: 30rpx;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    white-space: normal;
+}
+
+.cast-img {
+    width: 180rpx;
+    height: 230rpx;
+}
+.cast-name{
+    margin-top: 5px;
+}

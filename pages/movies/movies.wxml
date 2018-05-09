@@ -1,0 +1,27 @@
+<import src="movie-list/movie-list-template.wxml" />
+<import src="movie-grid/movie-grid-template.wxml" />
+<import src="more-movie/more-movie.wxml" />
+<view class='search'>
+    <icon class='search-img' type='search' size="13" color='#405f80'></icon>
+    <input type="String" placeholder='神秘巨星' value='{{text}}' placeholder-class='placehoder' bindfocus='onBindFocus' bindconfirm="onBindChange" />
+    <image wx:if="{{searchPanelShow}}" src='/images/icon/xx.png' class='xx-img' bindtap='onCancelImgTap'></image>
+</view>
+<view class='container' wx:if="{{containerShow}}">
+    <view class='movies-template'>
+        <template is="movieListTemplate" data="{{...inTheaters}}" />
+    </view>
+    <view class='movies-template'>
+        <template is="movieListTemplate" data="{{...comingSoon}}" />
+    </view>
+    <view class='movies-template'>
+        <template is="movieListTemplate" data="{{...top250}}" />
+    </view>
+    <!-- <block wx:for="{{[0,1]}} "wx:for-item="{{x}}">
+        <view class='movies-template'>
+            <template is="movieListTemplate" data=" {{movies}}" />
+        </view>
+    </block>-->
+</view>
+<view class='search-panel' wx:if="{{searchPanelShow}}">
+     <template is="movieGridTemplate" data="{{...searchResult}}" />
+</view>

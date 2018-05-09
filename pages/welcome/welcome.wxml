@@ -1,0 +1,9 @@
+<view class='container'>
+  <image class="user-avatar" src='/images/avatar/3.png'></image>
+  <view class='user-name-container' bindtap='onTap' >
+    <text class='user-name'>我是周东辉</text>
+  </view>
+  <view class='moto-container' >
+    <text class='moto' bindtap='onTap'>打开</text>
+  </view>
+</view>
